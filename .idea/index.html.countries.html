@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SVG Map Exercise</title>
+  <style>
+    .container {
+      display: flex;
+    }
+    .map, .reflections {
+      border: solid 1px steelblue;
+      width: 50%;
+      padding: 1em;
+      margin: 0.5em;
+    }
+    .info {
+      border: solid 1px steelblue;
+      width: 25%;
+      padding: 1em;
+      margin: 0.5em;
+    }
+    .highlight {
+      fill: yellow !important; /* Fremhæv farven når et land er valgt */
+    }
+  </style>
+</head>
+<body>
+<h2>SVG-MAP Exercise</h2>
+<div class="container">
+  <div class="map">
+    <!-- SVG-kort over Europa -->
+    <svg xmlns="http://www.w3.org/2000/svg"
+         width="800" height="600" viewBox="0 0 800 600">
+
+      <!-- Path-elementer for lande i Europa -->
+      <path id="DK" d="M100,100 L150,200 L200,100 Z" fill="#ccc" stroke="#000" /> <!-- Danmark -->
+      <path id="SE" d="M150,100 L200,200 L250,100 Z" fill="#ccc" stroke="#000" /> <!-- Sverige -->
+      <path id="NO" d="M120,80 L170,180 L220,80 Z" fill="#ccc" stroke="#000" /> <!-- Norge -->
+      <path id="FI" d="M180,80 L230,180 L280,80 Z" fill="#ccc" stroke="#000" /> <!-- Finland -->
+      <path id="DE" d="M200,150 L250,250 L300,150 Z" fill="#ccc" stroke="#000" /> <!-- Tyskland -->
+      <path id="FR" d="M250,200 L300,300 L350,200 Z" fill="#ccc" stroke="#000" /> <!-- Frankrig -->
+      <path id="IT" d="M300,250 L350,350 L400,250 Z" fill="#ccc" stroke="#000" /> <!-- Italien -->
+      <path id="ES" d="M220,300 L270,400 L320,300 Z" fill="#ccc" stroke="#000" /> <!-- Spanien -->
+      <path id="PT" d="M180,300 L230,400 L280,300 Z" fill="#ccc" stroke="#000" /> <!-- Portugal -->
+      <path id="NL" d="M220,150 L270,250 L320,150 Z" fill="#ccc" stroke="#000" /> <!-- Holland -->
+      <path id="BE" d="M230,160 L280,260 L330,160 Z" fill="#ccc" stroke="#000" /> <!-- Belgien -->
+      <path id="LU" d="M240,170 L290,270 L340,170 Z" fill="#ccc" stroke="#000" /> <!-- Luxembourg -->
+      <path id="AT" d="M300,150 L350,250 L400,150 Z" fill="#ccc" stroke="#000" /> <!-- Østrig -->
+      <path id="CH" d="M270,130 L320,230 L370,130 Z" fill="#ccc" stroke="#000" /> <!-- Schweiz -->
+      <path id="PL" d="M300,100 L350,200 L400,100 Z" fill="#ccc" stroke="#000" /> <!-- Polen -->
+      <path id="CZ" d="M320,120 L370,220 L420,120 Z" fill="#ccc" stroke="#000" /> <!-- Tjekkiet -->
+      <path id="SK" d="M330,130 L380,230 L430,130 Z" fill="#ccc" stroke="#000" /> <!-- Slovakiet -->
+      <path id="HU" d="M340,140 L390,240 L440,140 Z" fill="#ccc" stroke="#000" /> <!-- Ungarn -->
+      <path id="GR" d="M360,400 L410,500 L460,400 Z" fill="#ccc" stroke="#000" /> <!-- Grækenland -->
+      <path id="BG" d="M380,350 L430,450 L480,350 Z" fill="#ccc" stroke="#000" /> <!-- Bulgarien -->
+      <path id="RO" d="M400,320 L450,420 L500,320 Z" fill="#ccc" stroke="#000" /> <!-- Rumænien -->
+      <path id="RU" d="M500,50 L600,150 L700,50 Z" fill="#ccc" stroke="#000" /> <!-- Rusland -->
+      <path id="UA" d="M450,100 L500,200 L550,100 Z" fill="#ccc" stroke="#000" /> <!-- Ukraine -->
+      <!-- Tilføj flere lande her -->
+
+    </svg>
+  </div>
+  <div class="info" id="info">
+    <!-- Information om det valgte land vil blive vist her -->
+  </div>
+</div>
+<div class="reflections">Add your reflections here</div>
+
+<script src="script.js"></script>
+</body>
+</html>
